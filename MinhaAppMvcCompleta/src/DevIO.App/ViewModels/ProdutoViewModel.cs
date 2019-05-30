@@ -21,6 +21,7 @@ namespace DevIO.App.ViewModels
         [StringLength(1000, ErrorMessage = "O campo {0} precisar ter entre {2} e {1} caracteres", MinimumLength = 2)]
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public string Descricao { get; set; }
+        [DisplayName("Imagem do Produto")]
         public IFormFile ImagemUpload { get; set; }
         public string Imagem { get; set; }
         [Required(ErrorMessage = "O campo {0} é obrigatório")]

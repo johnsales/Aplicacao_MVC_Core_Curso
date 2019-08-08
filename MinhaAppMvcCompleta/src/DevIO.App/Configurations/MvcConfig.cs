@@ -26,7 +26,8 @@ namespace DevIO.App.Configurations
                 o.ModelBindingMessageProvider.SetValueIsInvalidAccessor((x) => "O valor preenchido é inválido para este campo.");
                 o.ModelBindingMessageProvider.SetValueMustBeANumberAccessor(x => "O campo deve ser numérico.");
                 o.ModelBindingMessageProvider.SetValueMustNotBeNullAccessor(x => "Este campo precisa ser preenchido.");
-
+                //adicionando a segurança do antiforgery em todas as requisições, caso não queira deixar em cada action do tipo post
+                o.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
             }
             ).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 

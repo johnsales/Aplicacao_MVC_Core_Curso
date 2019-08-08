@@ -13,13 +13,15 @@
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
+      }
+    },
     "IIS - Staging": {
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Staging"
-      },
+      }
+    },
     "IIS - Production": {
       "commandName": "IISExpress",
       "launchBrowser": true,
